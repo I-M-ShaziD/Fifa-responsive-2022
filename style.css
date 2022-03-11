@@ -1,0 +1,551 @@
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* ------------------------------------
+COMMON STYLES START
+------------------------------------*/
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 78%;
+    padding-top: 42px;
+    padding-bottom: 86px;
+    margin: auto;
+}
+
+article {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 24px;
+    border: 1px solid #E02C6D;
+    background: #E02C6D;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+i {
+    font-size: 16px;
+}
+
+button .left-side-icon {
+    margin-right: 10px;
+}
+
+button .right-side-icon {
+    margin-left: 10px;
+}
+
+/* ------------------------------------
+COMMON STYLES END
+------------------------------------*/
+
+/* ------------------------------------
+1ST SECTION STYLES START
+------------------------------------*/
+.top-area {
+    background-color: #2D25A0;
+}
+
+.navigation-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.menu ul>li {
+    list-style: none;
+    margin-right: 36px;
+}
+
+.menu ul>li>a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn button:hover {
+    background-color: #2d25a0;
+}
+
+.banner {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-area h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+
+.banner-info>button:hover {
+    font-size: 22px;
+    padding: 18px 30px;
+    border: 1px solid #d17798;
+    background: #d17798;
+}
+
+.banner-area img {
+    width: 556px;
+    height: 438px;
+    transition: transform 2s ease-out 0.2s;
+}
+
+.banner-area img:hover {
+    transform: rotate(360deg);
+}
+
+/* For simple animation  Start*/
+@keyframes sliding {
+    0% {
+        left: 0;
+        top: -700px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    100% {
+        left: 100%;
+        top: -700px;
+    }
+}
+
+.stage {
+    width: 96%;
+}
+
+.football {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    right: 0;
+    animation: sliding 5s ease-in-out .5s infinite alternate;
+    animation-play-state: running;
+}
+
+/* Simple Animation end  */
+/* ------------------------------------
+1ST SECTION STYLES END
+------------------------------------*/
+
+/* ------------------------------------
+Side Social STYLES START
+------------------------------------*/
+.side-social {
+    position: fixed;
+    top: 230px;
+}
+
+.side-social ul {
+    position: relative;
+    left: -60px;
+}
+
+.side-social li {
+    list-style: none;
+    width: 20px;
+    border-radius: 0 10px 10px 0;
+    background-color: #E02C6D;
+    margin: 11px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+
+.side-social i {
+    font-size: 25px;
+    color: #fff;
+    transition: .5s;
+}
+
+.side-social li:hover {
+    width: 35px;
+    background-color: blue;
+}
+
+.side-social li:hover i {
+    font-size: 40px;
+    color: rgb(224, 204, 204)
+}
+
+/* ------------------------------------
+Side Social STYLES END
+------------------------------------*/
+
+
+/* ------------------------------------
+2ND SECTION STYLES START
+------------------------------------*/
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #f3eded;
+    box-shadow: 5px 5px 40px 5px #e7e1e1;
+}
+
+.player img {
+    width: 305px;
+    height: 256px;
+}
+
+.player-name h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 16px 0 10px 0;
+    text-align: left;
+}
+
+/* ------------------------------------
+2ND SECTION STYLES END
+------------------------------------*/
+
+/* ------------------------------------
+3rd SECTION STYLES START
+------------------------------------*/
+.highlight-football {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+}
+
+.highlight-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight-info h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.highlight-info button {
+    margin-top: 24px;
+}
+
+.highlight-photo img {
+    width: 567px;
+    height: 427px;
+    padding-left: 20px;
+}
+
+/* ------------------------------------
+3rd SECTION STYLES END
+------------------------------------*/
+
+/* ------------------------------------
+Videos STYLES Start
+------------------------------------*/
+.youtube-videos h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.video {
+    display: flex;
+}
+
+
+/* ------------------------------------
+Videos STYLES Start
+------------------------------------*/
+
+
+/*------------------------------------
+CONTACT SECTION STYLES START
+------------------------------------*/
+.contact-form>.container {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-photo img {
+    width: 567px;
+    height: 427px;
+}
+
+.form {
+    display: flex;
+    border: 1px solid #ebd8d8;
+    width: 100%;
+    padding: 20px 35px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px 5px #e7e1e1;
+}
+
+.form h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.form input,
+textarea,
+btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 0px 5px 10px;
+    border: 1px solid #e0d5d5;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/*------------------------------------
+CONTACT SECTION STYLES START
+------------------------------------*/
+
+
+/*------------------------------------
+fOOTER SECTION STYLES START
+------------------------------------*/
+.footer-section>.container {
+    padding-bottom: 63px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info>.logo img {
+    width: 483px;
+    height: 110px;
+}
+
+.footer-info>.social-icon a {
+    padding: 5px;
+}
+
+.social-icon ul {
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon i {
+    font-size: 17px;
+    color: #969BAB;
+    background-color: #e3e5eb;
+    padding: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 1s;
+}
+
+.social-icon i:hover {
+    background-color: #10437A;
+    color: #ffffff;
+}
+
+.footer-info>.social-icon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+/*------------------------------------
+FOOTER SECTION STYLES END
+------------------------------------*/
+
+
+/* ------------------------
+Media Query  Start
+--------------------------*/
+
+/* Mobile Device Start*/
+@media only screen and (max-width:688px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 15px 27px;
+        border: 1px solid #E02C6D;
+        background: #E02C6D;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-area {
+        display: none;
+        position: absolute;
+    }
+
+    .banner,
+    .players,
+    .highlight-football,
+    .contact,
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-info h2 {
+        margin-top: 0;
+        font-size: 45px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .banner-photo img {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .player {
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    .player img {
+        width: 100%;
+        height: auto;
+    }
+
+    .highlight-area {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .highlight-photo img {
+        width: 100%;
+        height: auto;
+        padding-left: 0 !important;
+    }
+
+    .highlight-info h2 {
+        font-size: 30px;
+    }
+
+    .video {
+        margin-top: 20px;
+    }
+
+    .contact-photo img {
+        display: none;
+    }
+
+    .footer-info>.logo img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ------------------------------------ 
+Mobile Device End 
+------------------------------------*/
+
+/* -----------------------------------
+Tablet device Start 
+------------------------------------*/
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 90%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-info h2 {
+        font-size: 55px;
+    }
+
+    .banner-photo img {
+        width: 95%;
+        height: auto;
+    }
+
+    .player img {
+        width: 100%;
+        height: auto;
+    }
+
+    .highlight-info h2 {
+        font-size: 32px;
+    }
+
+    .highlight-photo img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-top: 92px;
+    }
+
+    .contact-photo img {
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+/* ------------------------
+Media Query  END
+--------------------------*/
